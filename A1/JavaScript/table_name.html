@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form><thead id="thead">
+        <label for="name">Name :</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="age">Age :</label>
+        <input type="number" name="age" id="age">
+        <br><br>
+        <button type="button" onclick="adding()">Add</button>
+    </form>
+    <br><br>
+    <table border="1" cellspacing="0" cellpadding="20">
+        
+
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script>
+        let j = 1;
+        function adding(){
+            //alert('Hello') ;
+            let name = document.querySelector('#name').value ;
+            console.log(name) ;
+            let age = document.querySelector('#age').value ;
+            console.log(age) ;
+            let tbody = document.querySelector('#tbody') ;
+            tbody.innerHTML += `<tr>
+                <td>${j++}</td>
+                <td>${name}</td>
+                <td>${age}</td>
+                </tr>`;
+            
+        }
+    </script>
+</body>
+</html>
