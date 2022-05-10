@@ -114,3 +114,51 @@ grid-column-end: 3;
     grid-row-start:1 ;
     grid-row-end:3 ;
 }
+/*Position*/
+.relative_parent{
+border: 1px solid red;
+width: 600px;
+height: 600px;
+}
+
+.relative{
+    border: 1px solid blue ;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left:275px ;
+    top: 275px;
+}
+
+.absolute_parent{
+    border: 1px solid green;
+    width: 1000px;
+    height: 500px;
+    position: relative;
+}
+.absolute{
+    border:1px double black ;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+.fixed{
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    }
+
+    /*Font*/
+    .online{
+       font-family: 'Tapestry' , cursive; 
+    }
+    @font-face{
+        src:url(Tapestry/SquarePeg-Regular.ttf) ;
+        font-family:Square;
+    }
+
+    .offline{
+        font-family:Square ;
+    }
